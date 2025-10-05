@@ -1,0 +1,183 @@
+/* Reset e Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f3f3;
+    /* background-color: #0cf53a; */
+}
+
+header {
+    background-color: #007BFF;
+    color: rgb(240, 58, 58);
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.sidebar {
+    flex: 1;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.perfil-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.foto-perfil {
+    border-radius: 50%;
+    margin-right: 1rem;
+    border: 3px solid #363d43;
+}
+
+.perfil-info {
+    flex: 1;
+}
+
+.links-externos {
+    margin: 1rem 0;
+}
+
+.links-externos a {
+    display: block;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+main {
+    flex: 2;
+}
+
+section {
+    margin-bottom: 2rem;
+    background: rgb(176, 173, 173);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 0.5rem;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.detalhes-oculto {
+    display: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #e9f5ff;
+    border-left: 4px solid #007BFF;
+}
+
+.habilidades-lista {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.habilidades-lista li {
+    background: #007BFF;
+    color: white;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}
+
+.skill-bar {
+    margin-top: 1rem;
+}
+
+.barra {
+    height: 20px;
+    background-color: #007BFF;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .foto-perfil {
+        margin: 0 auto 1rem;
+    }
+
+    .perfil-header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 1rem;
+    }
+}
